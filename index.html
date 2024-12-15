@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Momentum Clone</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+<!-- 전체 화면 -->
+<div class="container">
+
+    <!-- 랜덤 배경 -->
+    <div class="background"></div>
+    <div class="weather"><p></p></div>
+
+    <!-- 화면 중앙 시계 -->
+    <div class="center-content">
+        <div class="time">
+            <p id="date">2024-12-15</p>
+            <p id="clock">23:16:01</p>
+        </div>
+
+        <!-- 사용자 인사말 -->
+        <form class="login-form hidden">
+            <input
+                    type="text"
+                    class="login-form__input"
+                    placeholder="이름을 입력해주세요"
+                    required
+            />
+        </form>
+        <p class="greeting hidden"></p>
+
+        <!-- Todo 입력 폼 -->
+        <form id="todo-form">
+            <input type="text" placeholder="해야 할 일" id="todo-input" required />
+            <button type="submit">+</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+
+    <p class="quotes"></p>
+</div>
+<script src="src/js/background.js"></script>
+<script src="src/js/clock.js"></script>
+<script src="src/js/login.js"></script>
+<script src="src/js/quotes.js"></script>
+<script src="src/js/todo.js"></script>
+<script src="src/js/weather.js"></script>
+</body>
+</html>
